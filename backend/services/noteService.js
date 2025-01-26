@@ -6,23 +6,6 @@ class NoteService {
     return await Note.create(noteData);
   }
 
-  // async getAllNotes(query = {}) {
-  //   const { search, tags } = query;
-  //   let filter = {};
-
-  //   if (search) {
-  //     filter.$text = { $search: search };
-  //   }
-
-  //   if (tags) {
-  //     const tagArray = Array.isArray(tags) ? tags : [tags];
-  //     filter.tags = { $all: tagArray };
-  //   }
-
-  //   return await Note.find(filter).sort({ createdAt: -1 });
-  // }
-
-  // services/noteService.js
   async getAllNotes(query = {}) {
     const { search, tags } = query;
     let filter = {};
