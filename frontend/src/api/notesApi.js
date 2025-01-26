@@ -1,5 +1,4 @@
 // src/api/notesApi.js
-// src/api/notesApi.js
 const API_URL = 'http://localhost:8000/api/notes';
 
 export const notesApi = {
